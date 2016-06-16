@@ -104,10 +104,12 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	font-family: 'Lora', serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	font-weight: 500;
 	border-radius: 0;
-	background-color: #fff;
-    box-shadow: 0px 5px 14px #ddd;
+	background: transparent;
+}
+.navbar .container {
+	border-bottom: 1px solid #ededed;
+	border-top: 1px solid #ededed;
 }
 .navbar-default .navbar-nav > li > a {
     color: #222;
@@ -158,24 +160,15 @@ footer ul {
  * Index
  * ----------------------------------------------------------------------------
  */
-
+header {
+	background: url("img/bg.png") center center no-repeat;
+	background-size: 853px 259px;
+}
 .bc-banner {
 	position: relative;
 }
-.bc-banner::after {
-	content: "";
-	/*background: url("img/bg.jpg") #eee center center;*/
-	background-size: cover;
-	opacity: 0.2;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
-}
 .bc-banner img {
-	margin: 1em 0;
+	margin: 4em auto;
 }
 .tag-line p {
 	margin: 1em 0;
