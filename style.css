@@ -144,7 +144,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  
 footer {
 	padding: 1em 0;
-	background: url("img/footer-bg.png") #eee right top no-repeat;
+	/*background: url("img/footer-bg.png") #eee right top no-repeat;*/
 }
 footer .bc-info {
 	padding: 1em;
@@ -164,7 +164,7 @@ footer ul {
 }
 .bc-banner::after {
 	content: "";
-	background: url("img/bg.jpg") #eee center center;
+	/*background: url("img/bg.jpg") #eee center center;*/
 	background-size: cover;
 	opacity: 0.2;
 	top: 0;
