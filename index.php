@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/home.jpg" class="visible-xs img-responsive" alt="Crabtree Wines">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/home.jpg" class="visible-xs img-responsive" alt="Heathcote Winery">
                     <div id="carousel-example-generic" class="carousel slide visible-sm visible-md visible-lg" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -58,7 +58,7 @@
                             <h5>About</h5>
                             <h3 class="entry-title">
                                 <a href="/index.php/about/" rel="bookmark">
-                                    Crabtree Watervale Wines
+                                    Heathcote Winery
                                 </a>
                             </h3>
                             <div class="entry-summary">

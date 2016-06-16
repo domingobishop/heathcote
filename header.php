@@ -20,10 +20,10 @@
         <div class="bc-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-4 col-sm-2">
+                    <div class="col-xs-4 col-sm-2 text-center">
                         <a href="<?php bloginfo('siteurl'); ?>/"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/crabtree-logo.png" alt="Crabtree" class="img-responsive">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Heathcote Winery" class="img-responsive">
                         </a>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     </button>
                     <a class="navbar-brand" href="<?php bloginfo('siteurl'); ?>/"
                        title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                        Crabtree Wines
+                        Heathcote Winery
                     </a>
                 </div>
 
