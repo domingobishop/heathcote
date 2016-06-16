@@ -1,0 +1,300 @@
+/*
+Theme Name:     Heathcote Winery beta
+Theme URI:      http://chrisbishop.me.uk/resources/
+Author:         Chris Bishop
+Description:    A 'blank canvas' with Bootstrap for developing WordPress themes. 
+Author URI:     http://chrisbishop.me.uk/
+Version:        0.1.0
+License:		Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.org/licenses/by-sa/3.0/. Feel free to make any changes.
+Text Domain: heathcote
+*/
+
+@import url("css/bootstrap.min.css");
+
+/**
+ * Global
+ * ----------------------------------------------------------------------------
+ */
+ 
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
+	/*The weights are 300 (light), 400 (normal), 600 (semibold), and 700 (bold) and the only acceptable CSS keyword is "normal". */
+	text-rendering: optimizeLegibility;
+	color: #222;
+	font-size: 16px;
+	line-height: 1.6;
+}
+html, button, input, select, textarea {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lora', serif;
+    font-weight: 400;
+	color: #222;
+}
+a {
+	color: #e51b15;
+}
+a:hover, a:focus {
+	color: #000;
+}
+table {
+	border-bottom: 1px solid #ededed;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 1em;
+	line-height: 2;
+	margin: 0 0 20px;
+	width: 100%;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+caption {
+	font-size: 1em;
+	margin: 20px 0;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ededed;
+	padding: 6px 10px 6px 0;
+}
+
+/**
+ * Hyphenation
+ * ----------------------------------------------------------------------------
+ */
+
+h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	word-break: keep-all;
+}
+.site-content article {
+	word-wrap: normal;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+.widget-area .widget {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+	word-wrap: normal;
+}
+/**
+ * Nav
+ * ----------------------------------------------------------------------------
+ */
+
+.navbar {
+	margin: 0;
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 0;
+	background-color: #fff;
+    box-shadow: 0px 5px 14px #ddd;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #222;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #e51b15;
+}
+.navbar-default a.navbar-brand {
+    color: #e51b15;
+	text-transform: none;
+	font-family: 'Lora', serif;
+	font-weight: 400;
+}
+.navbar-default a:hover.navbar-brand {
+	color: #000;
+}
+.navbar-default .navbar-toggle {
+	background: #222;
+}
+
+/**
+ * Header
+ * ----------------------------------------------------------------------------
+ */
+
+.page header, .single header {
+    margin-bottom: 2em;
+}
+
+/**
+ * Footer
+ * ----------------------------------------------------------------------------
+ */
+ 
+footer {
+	padding: 1em 0;
+	background: url("img/footer-bg.png") #eee right top no-repeat;
+}
+footer .bc-info {
+	padding: 1em;
+}
+footer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/**
+ * Index
+ * ----------------------------------------------------------------------------
+ */
+
+.bc-banner {
+	position: relative;
+}
+.bc-banner::after {
+	content: "";
+	background: url("img/bg.jpg") #eee center center;
+	background-size: cover;
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+.bc-banner img {
+	margin: 1em 0;
+}
+.tag-line p {
+	margin: 1em 0;
+	color: #e51b15;
+}
+.bc-box {
+	border: 1px #ddd solid;
+	border-radius: 3px;
+	padding: 1em;
+	box-shadow: 0px 5px 14px #ddd;
+	min-height: 240px;
+	margin-bottom: 1.6em;
+}
+.carousel {
+	margin: 1.6em 0;
+}
+.carousel .item img {
+	border-radius: 3px;
+}
+.carousel-caption h3 {
+	font-size: 200%;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 5px 5px 5px #222;
+}
+
+
+/**
+ * Page & Posts
+ * ----------------------------------------------------------------------------
+ */
+
+.bc-content {
+    margin-bottom: 2em;
+}
+.category-wine .entry-thumbnail {
+	float: left;
+	margin: 0 3em 3em 0;
+}
+.category-wine .entry-thumbnail .btn-default {
+	width: 100%;
+	margin-top: 1em;
+}
+aside .textwidget {
+	border: 7px solid #eee;
+}
+
+/**
+ * Wines
+ * ----------------------------------------------------------------------------
+ */
+
+.wines .entry-content {
+	height: 148px;
+	overflow: hidden;
+}
+
+.wines .entry-content h3 {
+	font-size: 1.4em;
+}
+.btn-default {
+	color: #95a5a6;
+	background-color: transparent;
+	border-color: #95a5a6;
+}
+
+@media (max-width: 798px) {
+	.wines .entry-content h3 {
+		font-size: 1em;
+	}
+	.bc-box {
+		min-height: auto;
+	}
+	.nav>li>a {
+		padding: 10px 8px;
+	}
+	.navbar-brand {
+		display: none;
+	}
+	.navbar {
+		min-height: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.navbar-brand {
+		display: block;
+	}
+}
+
+ /**
+ * Images
+ * ----------------------------------------------------------------------------
+ */
+
+.wp-caption.aligncenter, img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.entry-content img.alignright, .entry-content .wp-caption.alignright {
+  margin-right: 0px;
+  float: right;
+}
+.wp-caption.alignright, img.alignright {
+	margin: 5px 0 5px 20px;
+}
+.entry-content img.alignleft, .entry-content .wp-caption.alignleft {
+  margin-left: 0px;
+  float: left;
+}
+.wp-caption.alignleft, img.alignleft {
+	margin: 5px 20px 5px 0px;
+}
+.wp-caption .wp-caption-text, .entry-caption, .gallery-caption {
+  color: #220e10;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+}
