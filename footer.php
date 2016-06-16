@@ -5,12 +5,13 @@
     </div>
     <div class="row bc-info">
       <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h4>Crabtree Watervale Wines</h4>
-        <p><a href="https://www.facebook.com/CrabtreeWines" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook.png"></a>
-          <a href="https://twitter.com/CrabtreeWines" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/twitter.png"></a></p>
+        <h4>HEATHCOTE WINERY</h4>
+        <p><a href="https://www.facebook.com/heathcotewinery/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook.png"></a>
+          <a href="https://twitter.com/heathcotewinery" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/twitter.png"></a></p>
+        <p><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ATAP-Logo.png"></p>
         <p>
-          North Terrace Watervale, South Australia <br>
-          T: 08 8843 0069  F: 08 884 30144<br>
+          185 High Street Heathcote Victoria 3523<br>
+          T: 03 5433 2595  F: 03 5433 3081<br>
           Copyright © <?php echo date("Y"); ?> <br>
           <small>Website by <a href="http://creatistic.com.au/" target="_blank">Creatistic</a></small>
         </p>
