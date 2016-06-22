@@ -8,7 +8,7 @@
         <h4>HEATHCOTE WINERY</h4>
         <p><a href="https://www.facebook.com/heathcotewinery/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook.png"></a>
           <a href="https://twitter.com/heathcotewinery" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/twitter.png"></a></p>
-        <p><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ATAP-Logo.png"></p>
+        <p><img src="<?php bloginfo('stylesheet_directory'); ?>/img/ATAP-Logo.png" style="width:90px;"></p>
         <p>
           185 High Street Heathcote Victoria 3523<br>
           T: 03 5433 2595  F: 03 5433 3081<br>
