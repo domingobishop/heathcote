@@ -70,7 +70,7 @@ function bc_widgets_init() {
     register_sidebar( array(
         'name' => 'Footer',
         'id' => 'bc_footer',
-        'before_widget' => '<div class="col-sm-6 col-md-4 widget-area">',
+        'before_widget' => '<div class="col-sm-6 col-md-3 widget-area">',
         'after_widget' => '</div>',
         'before_title' => '<h4>',
         'after_title' => '</h4>',

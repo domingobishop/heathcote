@@ -20,7 +20,7 @@ body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
 	/*The weights are 300 (light), 400 (normal), 600 (semibold), and 700 (bold) and the only acceptable CSS keyword is "normal". */
 	text-rendering: optimizeLegibility;
-	color: #222;
+	color: #444;
 	font-size: 16px;
 	line-height: 1.6;
 }
@@ -33,10 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #222;
 }
 a {
-	color: #e51b15;
+	color: #cc9966;
 }
 a:hover, a:focus {
-	color: #000;
+	color: #222;
 }
 table {
 	border-bottom: 1px solid #ededed;
@@ -112,19 +112,20 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	border-top: 1px solid #ededed;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #222;
+    color: #cc9966;
+	font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	color: #e51b15;
+	color: #222;
 }
 .navbar-default a.navbar-brand {
-    color: #e51b15;
+    color: #cc9966;
 	text-transform: none;
 	font-family: 'Lora', serif;
 	font-weight: 400;
 }
 .navbar-default a:hover.navbar-brand {
-	color: #000;
+	color: #222;
 }
 .navbar-default .navbar-toggle {
 	background: #222;
@@ -146,7 +147,6 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  
 footer {
 	padding: 1em 0;
-	/*background: url("img/footer-bg.png") #eee right top no-repeat;*/
 }
 footer .bc-info {
 	padding: 1em;
@@ -157,6 +157,10 @@ footer ul {
 }
 footer .container {
 	border-top: 1px solid #ededed;
+	margin-top: 1em;
+	padding-top: 1em;
+	background: url("img/bg.png") top center no-repeat;
+	background-size: 853px 259px;
 }
 
 /**

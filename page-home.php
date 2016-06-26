@@ -17,7 +17,9 @@ get_header(); ?>
                                     <?php the_content(); ?>
                                 </div>
                             </article>
-                        <?php endwhile; ?>
+                        <?php endwhile;
+                        wp_reset_postdata();
+                        ?>
                     </div>
                 </div>
             </div>

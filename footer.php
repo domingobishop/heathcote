@@ -2,9 +2,12 @@
   <div class="container">
     <div class="row">
       <?php dynamic_sidebar( 'bc_footer' ); ?>
+      <div class="col-sm-6 col-md-3 widget-area text-right">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/footer-botttles.png">
+      </div>
     </div>
     <div class="row bc-info">
-      <div class="col-lg-8 col-lg-offset-2 text-center">
+      <div class="col-lg-12 text-center">
         <h4>HEATHCOTE WINERY</h4>
         <p><a href="https://www.facebook.com/heathcotewinery/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/facebook.png"></a>
           <a href="https://twitter.com/heathcotewinery" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/twitter.png"></a></p>
