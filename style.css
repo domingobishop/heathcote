@@ -30,7 +30,7 @@ html, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lora', serif;
     font-weight: 400;
-	color: #222;
+	color: #cc9966;
 }
 a {
 	color: #cc9966;
@@ -113,7 +113,6 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 }
 .navbar-default .navbar-nav > li > a {
     color: #cc9966;
-	font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
 	color: #222;
@@ -156,11 +155,13 @@ footer ul {
 	padding: 0;
 }
 footer .container {
-	border-top: 1px solid #ededed;
 	margin-top: 1em;
 	padding-top: 1em;
 	background: url("img/bg.png") top center no-repeat;
 	background-size: 853px 259px;
+}
+footer h4 {
+	color: #222;
 }
 
 /**
@@ -214,6 +215,7 @@ header {
 .category-wine .entry-thumbnail {
 	float: left;
 	margin: 0 3em 3em 0;
+    max-width: 110px;
 }
 .category-wine .entry-thumbnail .btn-default {
 	width: 100%;
@@ -222,6 +224,28 @@ header {
 aside .textwidget {
 	border: 7px solid #eee;
 }
+ul.lcp_catlist {
+    padding: 0;
+    list-style: none;
+}
+.col-wine {
+    width: 14%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 768px) {
+    .col-wine {
+        width: 24%;
+    }
+}
+@media (max-width: 480px) {
+    .col-wine {
+        width: 48%;
+    }
+}
 
 /**
  * Wines
@@ -229,7 +253,6 @@ aside .textwidget {
  */
 
 .wines .entry-content {
-	height: 148px;
 	overflow: hidden;
 }
 
