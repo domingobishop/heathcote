@@ -7,7 +7,7 @@ get_header(); ?>
 
 <main id="main" class="bc-main" role="main">
     <div id="content">
-        <section>
+        <section class="page-content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -15,6 +15,12 @@ get_header(); ?>
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                 <div class="entry-content">
                                     <?php the_content(); ?>
+                                    <?php $awardImage = get_post_meta( $post->ID, 'award_image', true );
+                                    if ( $awardImage ) { ?>
+                                        <div class="award-image">
+                                                <img src="<?php echo $awardImage; ?>" alt="Award" class="img-responsive">
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </article>
                         <?php endwhile;
