@@ -176,7 +176,7 @@ header {
 	position: relative;
 }
 .bc-banner img {
-	margin: 4em auto;
+	margin: 2em auto;
 }
 .tag-line p {
 	margin: 1em 0;
@@ -226,9 +226,14 @@ header {
     margin-bottom: 2em;
 }
 .category-wine .entry-thumbnail {
-	float: left;
-	margin: 0 3em 3em 0;
-    max-width: 110px;
+    float: left;
+    margin: 0 8% 3em 0;
+    width: 11%;
+    max-width: 80px;
+}
+.category-wine .entry-content {
+    width: 80%;
+    float: left;
 }
 .category-wine .entry-thumbnail .btn-default {
 	width: 100%;

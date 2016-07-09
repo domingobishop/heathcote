@@ -37,16 +37,16 @@ get_header(); ?>
                         <div class="bc-box">
                             <article>
                                 <h5>About</h5>
+                                <?php
+                                $your_query = new WP_Query( 'pagename=about' );
+                                while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
                                 <h3 class="entry-title">
-                                    <a href="/index.php/about/" rel="bookmark">
+                                    <a href="<?php the_permalink(); ?>" rel="bookmark">
                                         Heathcote Winery
                                     </a>
                                 </h3>
                                 <div class="entry-summary">
-                                    <?php
-                                    $your_query = new WP_Query( 'pagename=about' );
-                                    while ( $your_query->have_posts() ) : $your_query->the_post();
-                                        the_excerpt();
+                                        <?php the_excerpt();
                                     endwhile;
                                     wp_reset_postdata();
                                     ?>
@@ -83,16 +83,16 @@ get_header(); ?>
                         <div class="bc-box">
                             <article>
                                 <h5>Members</h5>
+                                <?php
+                                $your_query = new WP_Query( 'pagename=Wine club' );
+                                while ( $your_query->have_posts() ) : $your_query->the_post(); ?>
                                 <h3 class="entry-title">
-                                    <a href="/index.php/join/" rel="bookmark">
+                                    <a href="<?php the_permalink(); ?>" rel="bookmark">
                                         Join our Wine Club
                                     </a>
                                 </h3>
                                 <div class="entry-summary">
-                                    <?php
-                                    $your_query = new WP_Query( 'pagename=join' );
-                                    while ( $your_query->have_posts() ) : $your_query->the_post();
-                                        the_excerpt();
+                                        <?php the_excerpt();
                                     endwhile;
                                     wp_reset_postdata();
                                     ?>

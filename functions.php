@@ -98,21 +98,23 @@ function meta_boxes() {
             'fields' => array(
                 array(
                     'name' => 'Award image URL',
-                    'desc' => '',
+                    'desc' => 'For home page only',
                     'id' => 'award_image',
+                    'type' => 'text',
+                    'std' => ''
+                ),
+                array(
+                    'name' => 'Buy now button URL',
+                    'desc' => 'For wine page only',
+                    'id' => 'buy',
                     'type' => 'text',
                     'std' => ''
                 )
             )
         )
     );
-    // Adds meta boxes to Level 1 Landing page template
-    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
-    $template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
-    if ($template_file == 'page-home.php') {
-        foreach ( $meta_boxes as $meta_box ) {
-            $home_box = new create_meta_box( $meta_box );
-        }
+    foreach ( $meta_boxes as $meta_box ) {
+        $home_box = new create_meta_box( $meta_box );
     }
 }
 add_action( 'init', 'meta_boxes' );
