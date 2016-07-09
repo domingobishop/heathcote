@@ -62,7 +62,7 @@ get_header(); ?>
                                     <article id="post-<?php the_ID(); ?>">
                                         <h5>News</h5>
                                         <h3 class="entry-title">
-                                            <a href="/news/" rel="bookmark">
+                                            <a href="/index.php/news/" rel="bookmark">
                                                 <?php the_title(); ?>
                                             </a>
                                         </h3>
