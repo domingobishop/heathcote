@@ -46,7 +46,7 @@ get_header(); ?>
                                     </a>
                                 </h3>
                                 <div class="entry-summary">
-                                        <?php the_excerpt();
+                                        <?php echo excerpt(20) ;
                                     endwhile;
                                     wp_reset_postdata();
                                     ?>
@@ -67,7 +67,7 @@ get_header(); ?>
                                             </a>
                                         </h3>
                                         <div class="entry-summary">
-                                            <?php the_excerpt(); ?>
+                                            <?php echo excerpt(20) ; ?>
                                         </div>
                                     </article>
                                 <?php endwhile; ?>
@@ -92,7 +92,7 @@ get_header(); ?>
                                     </a>
                                 </h3>
                                 <div class="entry-summary">
-                                        <?php the_excerpt();
+                                        <?php echo excerpt(20) ;
                                     endwhile;
                                     wp_reset_postdata();
                                     ?>

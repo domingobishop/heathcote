@@ -356,3 +356,8 @@ ul.lcp_catlist {
     font-style: italic;
     font-weight: 300;
 }
+
+#iconicwines .iconic-product.iconic-wine .iconic-image {
+    max-width: 20% !important;
+    min-width: 15% !important;
+}
