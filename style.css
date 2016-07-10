@@ -15,59 +15,59 @@ Text Domain: heathcote
  * Global
  * ----------------------------------------------------------------------------
  */
- 
+
 body {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
-	/*The weights are 300 (light), 400 (normal), 600 (semibold), and 700 (bold) and the only acceptable CSS keyword is "normal". */
-	text-rendering: optimizeLegibility;
-	color: #222;
-	font-size: 16px;
-	line-height: 1.6;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
+    /*The weights are 300 (light), 400 (normal), 600 (semibold), and 700 (bold) and the only acceptable CSS keyword is "normal". */
+    text-rendering: optimizeLegibility;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
 }
 html, button, input, select, textarea {
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif, sansserif;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lora', serif;
+    font-family: 'Lora', serif;
     font-weight: 400;
-	color: #222;
+    color: #cc9966;
 }
 a {
-	color: #e51b15;
+    color: #cc9966;
 }
 a:hover, a:focus {
-	color: #000;
+    color: #222;
 }
 table {
-	border-bottom: 1px solid #ededed;
-	border-collapse: collapse;
-	border-spacing: 0;
-	font-size: 1em;
-	line-height: 2;
-	margin: 0 0 20px;
-	width: 100%;
+    border-bottom: 1px solid #ededed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    line-height: 2;
+    margin: 0 0 20px;
+    width: 100%;
 }
 
 caption,
 th,
 td {
-	font-weight: normal;
-	text-align: left;
+    font-weight: normal;
+    text-align: left;
 }
 
 caption {
-	font-size: 1em;
-	margin: 20px 0;
+    font-size: 1em;
+    margin: 20px 0;
 }
 
 th {
-	font-weight: bold;
-	text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 td {
-	border-top: 1px solid #ededed;
-	padding: 6px 10px 6px 0;
+    border-top: 1px solid #ededed;
+    padding: 6px 10px 6px 0;
 }
 
 /**
@@ -76,23 +76,23 @@ td {
  */
 
 h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	word-break: keep-all;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    word-break: keep-all;
 }
 .site-content article {
-	word-wrap: normal;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	hyphens: none;
+    word-wrap: normal;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
 }
 .widget-area .widget {
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	hyphens: none;
-	word-wrap: normal;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+    word-wrap: normal;
 }
 /**
  * Nav
@@ -100,32 +100,34 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  */
 
 .navbar {
-	margin: 0;
-	font-family: 'Lora', serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-weight: 500;
-	border-radius: 0;
-	background-color: #fff;
-    box-shadow: 0px 5px 14px #ddd;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: transparent;
+}
+.navbar .container {
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #222;
+    color: #cc9966;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-	color: #e51b15;
+    color: #222;
 }
 .navbar-default a.navbar-brand {
-    color: #e51b15;
-	text-transform: none;
-	font-family: 'Lora', serif;
-	font-weight: 400;
+    color: #cc9966;
+    text-transform: none;
+    font-family: 'Lora', serif;
+    font-weight: 400;
 }
 .navbar-default a:hover.navbar-brand {
-	color: #000;
+    color: #222;
 }
 .navbar-default .navbar-toggle {
-	background: #222;
+    background: #222;
 }
 
 /**
@@ -141,65 +143,68 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  * Footer
  * ----------------------------------------------------------------------------
  */
- 
+
 footer {
-	padding: 1em 0;
-	background: url("img/footer-bg.png") #eee right top no-repeat;
+    padding: 1em 0;
 }
 footer .bc-info {
-	padding: 1em;
+    padding: 1em;
 }
 footer ul {
-	list-style-type: none;
-	padding: 0;
+    list-style-type: none;
+    padding: 0;
+}
+footer .container {
+    margin-top: 1em;
+    padding-top: 1em;
+    background: url("img/bg.png") top center no-repeat;
+    background-size: 853px 259px;
+}
+footer h4 {
+    color: #222;
 }
 
 /**
  * Index
  * ----------------------------------------------------------------------------
  */
-
-.bc-banner {
-	position: relative;
+header {
+    background: url("img/bg.png") center center no-repeat;
+    background-size: 853px 259px;
 }
-.bc-banner::after {
-	content: "";
-	background: url("img/bg.jpg") #eee center center;
-	background-size: cover;
-	opacity: 0.2;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
+.bc-banner {
+    position: relative;
 }
 .bc-banner img {
-	margin: 1em 0;
+    margin: 2em auto;
 }
 .tag-line p {
-	margin: 1em 0;
-	color: #e51b15;
+    margin: 1em 0;
+    color: #e51b15;
 }
 .bc-box {
-	border: 1px #ddd solid;
-	border-radius: 3px;
-	padding: 1em;
-	box-shadow: 0px 5px 14px #ddd;
-	min-height: 240px;
-	margin-bottom: 1.6em;
+    border: 1px #ddd solid;
+    border-radius: 3px;
+    padding: 1em;
+    box-shadow: 0px 5px 14px #ddd;
+    min-height: 240px;
+    margin-bottom: 1.6em;
 }
 .carousel {
-	margin: 1.6em 0;
+    margin: 1.6em 0;
 }
 .carousel .item img {
-	border-radius: 3px;
+    border-radius: 3px;
 }
 .carousel-caption h3 {
-	font-size: 200%;
-	font-weight: 700;
-	color: #fff;
-	text-shadow: 5px 5px 5px #222;
+    font-size: 200%;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 5px 5px 5px #222;
+}
+.home .entry-content {
+    min-height: 420px;
+    background-color: #eee;
 }
 
 
@@ -208,19 +213,73 @@ footer ul {
  * ----------------------------------------------------------------------------
  */
 
+.entry-content {
+    position: relative;
+}
+.award-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 180px;
+    box-shadow: 0 3px 4px #000;
+}
+.page-content {
+    margin-bottom: 1em;
+}
 .bc-content {
     margin-bottom: 2em;
 }
 .category-wine .entry-thumbnail {
-	float: left;
-	margin: 0 3em 3em 0;
+    float: left;
+    margin: 0 5% 3em 0;
+    width: 14%;
+    max-width: 100px;
+}
+.category-wine .entry-content {
+    width: 80%;
+    float: left;
 }
 .category-wine .entry-thumbnail .btn-default {
-	width: 100%;
-	margin-top: 1em;
+    width: 100%;
+    margin-top: 1em;
 }
-aside .textwidget {
-	border: 7px solid #eee;
+ul.lcp_catlist {
+    padding: 0;
+    list-style: none;
+}
+.col-wine {
+    width: 14%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-wine h4 {
+    font-size: 18px;
+}
+.col-wine .entry-content {
+    min-height: 270px;
+}
+.dnone {
+    display: none;
+}
+.widget-area {
+    margin-bottom: 1em;
+}
+@media (max-width: 768px) {
+    .col-wine {
+        width: 24%;
+    }
+}
+@media (max-width: 480px) {
+    .col-wine {
+        width: 48%;
+    }
+}
+
+.widget-area .textwidget {
+    font-size: 0.9em;
 }
 
 /**
@@ -229,72 +288,76 @@ aside .textwidget {
  */
 
 .wines .entry-content {
-	height: 148px;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .wines .entry-content h3 {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
 .btn-default {
-	color: #95a5a6;
-	background-color: transparent;
-	border-color: #95a5a6;
+    color: #95a5a6;
+    background-color: transparent;
+    border-color: #95a5a6;
 }
 
 @media (max-width: 798px) {
-	.wines .entry-content h3 {
-		font-size: 1em;
-	}
-	.bc-box {
-		min-height: auto;
-	}
-	.nav>li>a {
-		padding: 10px 8px;
-	}
-	.navbar-brand {
-		display: none;
-	}
-	.navbar {
-		min-height: auto;
-	}
+    .wines .entry-content h3 {
+        font-size: 1em;
+    }
+    .bc-box {
+        min-height: auto;
+    }
+    .nav>li>a {
+        padding: 10px 8px;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .navbar {
+        min-height: auto;
+    }
 }
 
 @media (max-width: 480px) {
-	.navbar-brand {
-		display: block;
-	}
+    .navbar-brand {
+        display: block;
+    }
 }
 
- /**
- * Images
- * ----------------------------------------------------------------------------
- */
+/**
+* Images
+* ----------------------------------------------------------------------------
+*/
 
 .wp-caption.aligncenter, img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .entry-content img.alignright, .entry-content .wp-caption.alignright {
-  margin-right: 0px;
-  float: right;
+    margin-right: 0px;
+    float: right;
 }
 .wp-caption.alignright, img.alignright {
-	margin: 5px 0 5px 20px;
+    margin: 5px 0 5px 20px;
 }
 .entry-content img.alignleft, .entry-content .wp-caption.alignleft {
-  margin-left: 0px;
-  float: left;
+    margin-left: 0px;
+    float: left;
 }
 .wp-caption.alignleft, img.alignleft {
-	margin: 5px 20px 5px 0px;
+    margin: 5px 20px 5px 0px;
 }
 .wp-caption .wp-caption-text, .entry-caption, .gallery-caption {
-  color: #220e10;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 300;
+    color: #220e10;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#iconicwines .iconic-product.iconic-wine .iconic-image {
+    max-width: 20% !important;
+    min-width: 15% !important;
 }

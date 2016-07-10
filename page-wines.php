@@ -11,7 +11,7 @@ get_header(); ?>
                 <div class="row">
                         <?php
                         $args = array(  'posts_per_page' => 12,
-                                        'category' => 3, //3,16,
+                                        'category_name' => 'wine',
                                         'post_type' => 'page',
                                         'post_status' => 'publish',
                                         'orderby' => 'menu_order',
@@ -19,7 +19,7 @@ get_header(); ?>
                         );
                         $wineposts = get_posts( $args );
                         foreach ( $wineposts as $post ) : setup_postdata( $post ); ?>
-                            <div class="col-xs-6 col-sm-2">
+                            <div class="col-wine">
                                 <div class="box clearfix text-center">
                                     <div class="entry-thumbnail">
                                         <a href="<?php the_permalink(); ?>">
@@ -27,8 +27,13 @@ get_header(); ?>
                                         </a>
                                     </div>
                                     <div class="entry-content">
-                                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                                        <p><small><?php the_excerpt(); ?></small></p>
                                         <a href="<?php the_permalink(); ?>" class="btn btn-default btn-xs">Read more</a>
+                                        <?php $buy = get_post_meta($post->ID, 'buy', true);
+                                            if ($buy) { ?>
+                                                <a href="<?php echo $buy; ?>" class="btn btn-default btn-xs">Buy now</a>
+                                            <?php } ?>
                                     </div>
                                 </div>
                             </div>
