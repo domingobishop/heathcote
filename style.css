@@ -9,8 +9,6 @@ License:		Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.o
 Text Domain: heathcote
 */
 
-@import url("css/bootstrap.min.css");
-
 /**
  * Global
  * ----------------------------------------------------------------------------
@@ -360,4 +358,65 @@ ul.lcp_catlist {
 #iconicwines .iconic-product.iconic-wine .iconic-image {
     max-width: 20% !important;
     min-width: 15% !important;
+}
+
+/**
+* Woocommerce
+* ----------------------------------------------------------------------------
+*/
+
+.woocommerce #container {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.woocommerce ul.products {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.woocommerce ul.products li img,
+.woocommerce div.product div.images img {
+    max-width: 80px;
+}
+.woocommerce div.product div.images img {
+    margin: 0 auto;
+}
+.mini_cart_item img, .woocommerce-tabs h2 {
+    display: none;
+}
+ul.cart_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a.remove {
+    color: darkred;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: #cc9966;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: #444;
+}
+.woocommerce button.button.alt.disabled {
+    background-color: #ddd;
+}
+.woocommerce input {
+    padding: .24em;
+}
+.woocommerce-tabs {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.woocommerce-Price-amount {
+    color: #444;
+}
+.single-product aside, .variations td.label {
+    display: none;
 }

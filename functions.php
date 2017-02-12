@@ -2,9 +2,11 @@
 
 // Enqueue styles and scripts
 function bc_styles() {
+    wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), 1.0, 'all' );
     wp_register_style( 'bc-styles', get_template_directory_uri() . '/style.css', array(), 1.0, 'all' );
     wp_register_style( 'google-fonts',
         'https://fonts.googleapis.com/css?family=Lora:400,700|Droid+Serif:400,700|Open+Sans:400,700,400italic', array(), 1.0, 'all' );
+    wp_enqueue_style( 'bootstrap' );
     wp_enqueue_style( 'bc-styles' );
     wp_enqueue_style( 'google-fonts' );
 }
@@ -71,6 +73,14 @@ function bc_widgets_init() {
         'name' => 'Footer',
         'id' => 'bc_footer',
         'before_widget' => '<div class="col-sm-6 col-md-3 widget-area">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Basket',
+        'id' => 'bc_basket',
+        'before_widget' => '<div class="widget-area">',
         'after_widget' => '</div>',
         'before_title' => '<h4>',
         'after_title' => '</h4>',
@@ -240,5 +250,60 @@ class create_meta_box {
         }
     }
 }
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'init', 'remove_wc_breadcrumbs' );
+function remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
+function wc_remove_related_products( $args ) {
+    return array();
+}
+add_filter('woocommerce_related_products_args','wc_remove_related_products', 10);
+add_filter( 'woocommerce_product_tabs', 'woo_remove_reviews_tab', 98);
+function woo_remove_reviews_tab($tabs) {
+    unset($tabs['reviews']);
+    unset( $tabs['additional_information'] );
+    return $tabs;
+}
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+
+    $tabs['description']['title'] = __( 'Tasting notes' );		// Rename the description tab
+
+    return $tabs;
+
+}
+function custom_unlink_single_product_image( $html, $post_id ) {
+    return get_the_post_thumbnail( $post_id, apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ) );
+}
+
+add_filter('woocommerce_single_product_image_html', 'custom_unlink_single_product_image', 10, 2);
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+function hide_coupon_field_on_cart( $enabled ) {
+    if ( is_cart() ) {
+        $enabled = false;
+    }
+    return $enabled;
+}
+add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_cart' );
+// hide coupon field on checkout page
+function hide_coupon_field_on_checkout( $enabled ) {
+    if ( is_checkout() ) {
+        $enabled = false;
+    }
+    return $enabled;
+}
+add_filter( 'woocommerce_coupons_enabled', 'hide_coupon_field_on_checkout' );
+function remove_short_description() {
+    remove_meta_box( 'postexcerpt', 'product', 'normal');
+}
+
+add_action('add_meta_boxes', 'remove_short_description', 999);
+
+
 
 
