@@ -13,12 +13,44 @@ get_header(); ?>
                     <div class="col-md-12">
                         <?php while (have_posts()) : the_post(); ?>
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                <div class="entry-content">
-                                    <?php the_content(); ?>
-                                    <?php $awardImage = get_post_meta( $post->ID, 'award_image', true );
-                                    if ( $awardImage ) { ?>
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0"
+                                            class="active"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/slide-0.jpg"
+                                                 alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/slide-1.jpg"
+                                                 alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/slide-2.jpg"
+                                                 alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/slide-3.jpg"
+                                                 alt="...">
+                                        </div>
+                                        <div class="item">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/slide-4.jpg"
+                                                 alt="...">
+                                        </div>
+                                    </div>
+                                    <?php $awardImage = get_post_meta($post->ID, 'award_image', true);
+                                    if ($awardImage) { ?>
                                         <div class="award-image">
-                                                <img src="<?php echo $awardImage; ?>" alt="Award" class="img-responsive">
+                                            <img src="<?php echo $awardImage; ?>" alt="Award" class="img-responsive">
                                         </div>
                                     <?php } ?>
                                 </div>
