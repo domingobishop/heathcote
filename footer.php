@@ -27,7 +27,7 @@
 <?php wp_footer(); ?>
 
 <!-- jQuery --> 
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js" type="text/javascript"></script> 
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js" type="text/javascript"></script> -->
 
 <!-- Bootstrap Core JavaScript --> 
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script> 
