@@ -20,19 +20,6 @@
         <div class="bc-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="member-login">
-                            <?php
-                            if ( is_user_logged_in() ) {
-                                echo 'Club Member, you are <strong>signed in</strong>. <a href="https://heathcotewinery.com.au/index.php/my-account/" role="button" class="btn btn-default btn-xs">My account</a> <a href="https://heathcotewinery.com.au/index.php/customer-logout/" role="button" class="btn btn-default btn-xs">Sign out</a>';
-                            } else {
-                                echo '<a href="https://heathcotewinery.com.au/index.php/my-account/" role="button" class="btn btn-default btn-xs">Club Member sign in</a> <a href="https://heathcotewinery.com.au/index.php/my-account/lost-password/" class="btn btn-default btn-xs">Forgot password?</a>';
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="col-md-12 text-center">
                         <a href="<?php bloginfo('siteurl'); ?>/"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">

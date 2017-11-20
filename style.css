@@ -427,3 +427,26 @@ a.remove {
     background-color: #cc9966;
     border-color: #cc9966;
 }
+
+.woocommerce ul.products li.product a img {
+    width: auto;
+    height: 280px;
+    margin: 0 auto;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    text-align: center;
+    padding: 0.6em;
+}
+.woocommerce ul.products li.product table > tbody > tr > td.value {
+    text-align: center;
+}
+.woocommerce ul.products li.product table {
+    border-bottom: none;
+}
+.woocommerce ul.products li.product h3 {
+    font-size: 1.4em;
+}
+.woocommerce ul.products li.product .woocommerce a.button {
+    color: #fff;
+    background-color: #cc9966;
+}
